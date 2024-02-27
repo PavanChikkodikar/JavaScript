@@ -6,7 +6,7 @@ name = "Pavan" //string
 age = 50 //integer
 x = null; //special value (empty value)
 y = undefined; 
-ifFollow = false;
+ifFollow = false; //boolean
 
 
 console.log(name)
