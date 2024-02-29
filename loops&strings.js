@@ -67,7 +67,7 @@ console.log(res);
 
 
 // string methods
-// strings are immutables in JS
+// strings are immutables in JS, we cant change original string 
 
 let st = "   Pavan Chikkodikar   "
 let st2 = "Mudhol"
@@ -89,7 +89,7 @@ console.log(st);
 st = st + st2;
 console.log(st);
 
-st = st.replace("Mudhol", "MDL")
+st = st.replace("Mudhol", "MDL")S
 console.log(st);
 
 st = st.replaceAll("Mudhol", "MDL")
