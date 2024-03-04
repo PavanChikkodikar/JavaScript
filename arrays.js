@@ -101,4 +101,33 @@ b9.unshift("6");
 // shift - works like pop
 let b10 = ["7","8","9"];
 let b11 = b10.shift("6");
-console.log(b11);
+console.log("deleted",b11);
+
+//Slice
+let pav = ["Pavan","Venk","Shri","Ex"]
+console.log(pav.slice(1,2));
+console.log(pav.slice(1)); 
+
+
+//Splice - this will changen the original array
+
+let she = [1,2,3,4,5,6,7];
+//first deleting the elements and then adding the new elements at deleted positions 
+// she.splice(2,2,101,102);
+
+// Add element
+// she.splice(2,0,101);
+
+// delete element
+// she.splice(3,1)
+
+// replace element
+she.splice(2,1,102)
+
+let cmp = ["B","M","U","G","I","N"]
+cmp.shift();
+console.log(cmp);
+cmp.splice(2,1,"O")
+console.log(cmp);
+cmp.push("A");
+console.log(cmp);
