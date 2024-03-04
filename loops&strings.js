@@ -89,7 +89,7 @@ console.log(st);
 st = st + st2;
 console.log(st);
 
-st = st.replace("Mudhol", "MDL")S
+st = st.replace("Mudhol", "MDL")
 console.log(st);
 
 st = st.replaceAll("Mudhol", "MDL")

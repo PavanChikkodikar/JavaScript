@@ -110,9 +110,8 @@ switch(exp){
         console.log("No fruit found");
 }
 
-// to take user input (it is temprary)
+// to take user input (it is temporary)
 let d = prompt("Hello how are u");
 console.log(d);
 
-// how to take user input
 
