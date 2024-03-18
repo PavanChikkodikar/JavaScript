@@ -133,3 +133,34 @@ let output2 = array.reduce((preValue,curValue) => {
     return  preValue < curValue ? preValue : curValue;
 });
 console.log(output2);
+
+// marks greater than 90
+let mrk = [45,97,98,47,100,90];
+
+let topMrk = mrk.filter((val) => {
+    return val > 90;
+});
+console.log(topMrk);
+
+
+//find 1 to n, find sum and product
+let number = prompt("Enter no ");
+
+let ab = [];
+
+for(let i = 1;i<=number;i++){
+    ab[i-1] = i;
+}
+console.log(ab);
+
+let sum1 = ab.reduce((prev,curr) =>{
+    return prev+curr;
+});
+
+console.log("Sum ", sum1)
+
+let fact = ab.reduce((prev,curr) =>{
+    return prev*curr;
+});
+
+console.log("Factorial ", fact)
