@@ -71,4 +71,65 @@ countVowel("Chirag")
 
 
 // callback function
+//for Each loop (Higher order function/methods)
+let arr = [1,2,3,4,5];
 
+arr.forEach(function printVal(val){
+    console.log(val);
+});
+// or
+let arr1 = ["P","B","C"];
+arr1.forEach((val)=>{
+    console.log(val) //val.toUpperCase()
+});
+
+let arr2 = ["P","B","C"];
+arr2.forEach((val,idx,arr)=>{
+    console.log(val,idx,arr) 
+});
+
+let n = [2,3,4,5,6,7,8];
+
+n.forEach((n) => {
+    console.log(n*n);
+});
+
+//map
+let n1 = [2,3,4,5,6,7,8];
+
+let newArr = n1.map((val) =>{
+    return val;
+});
+console.log(newArr);
+
+//filter
+let n2 = [2,3,4,5,6,7,8];
+let newArr1 = n2.filter((val) =>{
+    return val%2===0;
+});
+console.log(newArr1);
+
+//reduce - returns a single value
+
+let array = [1,2,3,4,5];
+
+let output = array.reduce((preValue,curValue) => {
+    return  preValue + curValue;
+});
+console.log(output);
+
+//find largest of an array
+let array1 = [1,2,3,4,5];
+
+let output1 = array.reduce((preValue,curValue) => {
+    return  preValue > curValue ? preValue : curValue;
+});
+console.log(output1);
+
+//find smallest of an array
+let array2 = [1,2,3,4,5];
+
+let output2 = array.reduce((preValue,curValue) => {
+    return  preValue < curValue ? preValue : curValue;
+});
+console.log(output2);
