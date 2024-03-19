@@ -34,6 +34,11 @@ console.dir(button);
 
 
 // Properties
+// 1. tagName
+// 2. innerText
+// 3. innerHTML
+// 4. textContent
+
 
 
 
