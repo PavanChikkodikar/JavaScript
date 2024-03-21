@@ -72,4 +72,46 @@ console.log(tata);
 // myCar.stop(); 
 // console.log(myCar);
 
-// Constructor
+
+
+// Inheritance
+class Parent{
+    hello(){
+        console.log("Hello");
+    }
+}
+
+class Child extends Parent {}
+
+let obj = new Child();
+
+// example-1
+class Person{
+    constructor(){
+        console.log("we are humans");
+    }
+    eat(){
+        console.log("Eat");
+    }
+    sleep(){
+        console.log("Sleep");
+    }
+}
+
+// Note : if parent and child class have same functions or method then child function or method will invoke or execute this is called as Method Oevrriding
+
+class Engineer extends Person{
+    work(){
+        console.log("Working on something");
+    }
+}
+
+class Doctor extends Person{
+    work(){
+        console.log("Treats patients");
+    }
+}
+
+
+let  engineer = new Engineer();
+console.log(engineer);
