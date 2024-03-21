@@ -88,7 +88,8 @@ let obj = new Child();
 // example-1
 class Person{
     constructor(){
-        console.log("we are humans");
+        console.log("Enter parent constructor");
+        this.species="we are humans";
     }
     eat(){
         console.log("Eat");
@@ -101,6 +102,12 @@ class Person{
 // Note : if parent and child class have same functions or method then child function or method will invoke or execute this is called as Method Oevrriding
 
 class Engineer extends Person{
+    constructor(branch){
+        console.log("Enter child constructor")
+        super(); //to invoke parent class constructor
+        this.branch = branch;
+        console.log("Exit child constructor");
+    }
     work(){
         console.log("Working on something");
     }
@@ -115,3 +122,7 @@ class Doctor extends Person{
 
 let  engineer = new Engineer();
 console.log(engineer);
+
+let engObj = new Engineer("Chem Engg"); //child class object
+
+
