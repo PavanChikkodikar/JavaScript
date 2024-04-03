@@ -1,9 +1,11 @@
+// for loop
+
 for(let i=1;i<=5;i++){
     console.log("Hi How are u!");
 }
 console.log("Loop ended");
 
-//sum of 1 to 10
+//to find sum of 1 to 10
 let sum = 0;
 let n = 10;
 
@@ -21,7 +23,7 @@ for(let i of str){
 }
 console.log("size of str",size)
 
-// for of in - this is used for objects
+// for  in - this is used for objects
 let stud = {
     name : "Pavan",
     age : 22,
@@ -49,7 +51,7 @@ for (let key in stud){
 let s = "Pavan";
 let a = s.length;
 console.log(a)
-console.log(s[2])
+console.log(s[2]) // this will print 2nd index i.e 'v'
 
 //Template literals
 let q =  `this is template literals`
@@ -68,32 +70,33 @@ console.log(res);
 
 // string methods
 // strings are immutables in JS, we cant change original string 
+// String is a sequence of characters used to represent text
 
 let st = "   Pavan Chikkodikar   "
 let st2 = "Mudhol"
-st = st.toUpperCase();
+st = st.toUpperCase(); // makes complete string uppercase
 console.log(st);
 
-st = st.toLowerCase();
+st = st.toLowerCase(); // makes complete string lowercase
 console.log(st);
 
 st = st.trim(); //remove white spaces from above string
 console.log(st);
 
-st = st.slice(2,8);
+st = st.slice(2,8);  //van Ch
 console.log(st);
 
-st = st.concat(st2);
+st = st.concat(st2); // combines two strings
 console.log(st);
 // or
 st = st + st2;
 console.log(st);
 
-st = st.replace("Mudhol", "MDL")
+st = st.replace("Mudhol", "MDL") // this will replace only first  occurrence of string to another string
 console.log(st);
 
-st = st.replaceAll("Mudhol", "MDL")
+st = st.replaceAll("Mudhol", "MDL") //this will replace  all occurrences string with another string
 console.log(st);
 
-st = st.charAt(5)
+st = st.charAt(5) // used to retrieve the character at a specified index within a string
 console.log(st);
